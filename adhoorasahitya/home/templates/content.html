@@ -1,0 +1,11 @@
+<div class='border-bottom row' style='margin-bottom:16px;padding-bottom:8px'>
+	<div class=col-9>
+		<h4 style='margin-bottom:0px;color:rgb(80,80,80);'>{{content.title}}</h4>
+		{% if 'author' in content %}
+		<div><b>By: </b>{{content.author}}</div>
+		{% endif %}
+	</div>
+	<div class='col-3 text-end'>
+		<button type="button" class="btn btn-outline-primary">Read</button>
+	</div>
+</div>
