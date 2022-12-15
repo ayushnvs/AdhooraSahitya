@@ -1,0 +1,10 @@
+body {
+    background: rgb(255, 255, 197);
+}
+img {
+    height: 700px;
+    object-fit: cover;
+}
+nav a {
+    color: black;
+}

@@ -17,3 +17,6 @@ my_dict = {'contents': contents}
 
 def home_page(request):
     return render(request, 'home.html', my_dict)
+
+def base_page(request):
+    return render(request, 'base.html', {})

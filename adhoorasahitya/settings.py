@@ -15,6 +15,8 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+print(BASE_DIR)
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -26,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '9936d58a-32fb-410f-81ac-e1cb9a94d077.id.repl.co',
-    'adhoorasahitya.ayushvns.repl.co'
+    'adhoorasahitya.ayushvns.repl.co',
+    '127.0.0.1',
 ]
 
 # Application definition
@@ -58,7 +61,7 @@ ROOT_URLCONF = 'adhoorasahitya.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
