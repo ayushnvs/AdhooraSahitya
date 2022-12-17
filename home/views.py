@@ -1,18 +1,25 @@
 from django.shortcuts import render
+import json
 
 contents = [{
     "title": 'त्वमेव माता चपिता त्वमेव',
-    'collection': 'Poetry'
+    'collection': 'Poetry',
+    'id': '1'
 }, {
     'title': 'Father we thank thee',
-    'collection': 'Poetry'
+    'collection': 'Poetry',
+    'id': '2'
 }, {
     'title': 'पुष्प की अभिलाषा',
     'author': 'माखन लाल चतुर्वेदी',
-    'collection': 'Poetry'
+    'collection': 'Poetry',
+    'id': '3'
 }]
 
-my_dict = {'contents': contents}
+metadata = str(contents)
+print(metadata)
+
+my_dict = {'contents': contents, 'metadata': metadata}
 
 
 def home_page(request):
