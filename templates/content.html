@@ -1,4 +1,5 @@
-<div class='border-bottom row' style='margin-bottom:16px;padding-bottom:8px'>
+{% load static %}
+<!-- <div class='border-bottom row border-1' style='margin-bottom:16px;padding-bottom:8px'>
 	<div class=col-9>
 		<h4 style='margin-bottom:0px;color:rgb(80,80,80);'>{{content.title}}</h4>
 		{% if 'author' in content %}
@@ -8,4 +9,12 @@
 	<div class='col-3 text-end'>
 		<a type="button" class="btn btn-outline-primary" href="{{content.author}}">Read</a>
 	</div>
+</div> -->
+
+<div class="article">
+	<div class="img">
+		<img src="{% static 'IMG/default.jpg' %}" alt="">
+	</div>
+	<p class="article-title">{{content.title}}</p>
+	<p class="article-author">{{content.author}}</p>
 </div>

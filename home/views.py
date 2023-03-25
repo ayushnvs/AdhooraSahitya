@@ -14,6 +14,21 @@ contents = [{
     'author': 'माखन लाल चतुर्वेदी',
     'collection': 'Poetry',
     'id': '3'
+}, {
+    'title': 'पुष्प की अभिलाषा',
+    'author': 'माखन लाल चतुर्वेदी',
+    'collection': 'Poetry',
+    'id': '4'
+}, {
+    'title': 'पुष्प की अभिलाषा',
+    'author': 'माखन लाल चतुर्वेदी',
+    'collection': 'Poetry',
+    'id': '3'
+}, {
+    'title': 'पुष्प की अभिलाषा',
+    'author': 'माखन लाल चतुर्वेदी',
+    'collection': 'Poetry',
+    'id': '4'
 }]
 
 metadata = str(contents)
@@ -24,6 +39,9 @@ my_dict = {'contents': contents, 'metadata': metadata}
 
 def home_page(request):
     return render(request, 'home.html', my_dict)
+
+def about_page(request):
+    return render(request, 'about.html', my_dict)
 
 def base_page(request):
     return render(request, 'base.html', {})
