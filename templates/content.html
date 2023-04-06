@@ -1,20 +1,20 @@
 {% load static %}
-<!-- <div class='border-bottom row border-1' style='margin-bottom:16px;padding-bottom:8px'>
-	<div class=col-9>
-		<h4 style='margin-bottom:0px;color:rgb(80,80,80);'>{{content.title}}</h4>
-		{% if 'author' in content %}
-		<div><b>By: </b>{{content.author}}</div>
-		{% endif %}
-	</div>
-	<div class='col-3 text-end'>
-		<a type="button" class="btn btn-outline-primary" href="{{content.author}}">Read</a>
-	</div>
-</div> -->
+
+<div class="article-metadata">
+	<p class="meta-title">{{content.title}}</p>
+	<p class="meta-author">{{content.author}}</p>
+	<p class="meta-id">{{content.id}}</p>
+	<p class="meta-url">{{content.url}}</p>
+</div>
 
 <div class="article">
 	<div class="img">
 		<img src="{% static 'IMG/default.jpg' %}" alt="">
 	</div>
-	<p class="article-title">{{content.title}}</p>
-	<p class="article-author">{{content.author}}</p>
+	<div class="article-data">
+		<p class="article-title">{{content.title}}</p>
+		<p class="article-author">{{content.author}}</p>
+		<a type="button" href="" class="read-button btn btn-outline-primary">Read</a>
+	</div>
+	
 </div>

@@ -1,16 +1,7 @@
-body {
-    /* background: rgb(255, 255, 197); */
-}
-img {
-    height: 700px;
-    object-fit: cover;
-}
 nav {
     background-color: white;
 }
-nav a {
-    /* color: black; */
-}
+
 .border-1 {
     border: 1px red solid;
 }
@@ -21,11 +12,14 @@ nav a {
     flex-wrap: wrap;
     align-items: center;
 }
+.article-metadata {
+    display: none;
+}
 .article {
     background-color: white;
     margin: 10px;
     width: 14rem;
-    height: 15rem;
+    height: 18rem;
     border-radius: 2%;
     box-shadow: 1px 2px 5px 0 gray;
     display: flex;
@@ -37,4 +31,12 @@ nav a {
     width: 100%;
     height: 100%;
     border-radius: 2%;
+}
+
+div.article > div.article-data {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
